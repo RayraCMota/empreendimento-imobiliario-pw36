@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'bitter', sans-serif;
+
+}
+
+header{
+    background-color: rgb(34, 147, 147);
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > .container{
+    justify-content: space-between;
+    align-items: center; 
+}
+
+nav {
+    background-color: rgb(34, 147, 147);
+    padding: 16px 0;
+    display: flex;
+}
+
+nav .container{
+    display: flex;
+    justify-content: right;
+}
+
+nav li{
+    list-style: none;
+    display: inline;
+    justify-content: right;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.foto-capa img{
+    max-width: 100%;
+}
+
+
+.predio,
+.area-lazer{
+    height: 550px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    color:#fff;
+    background-color: rgb(34, 147, 147);
+    border: 5px solid #fff;
+}
+
+.predio h2{
+    font-size: 50px;
+    padding-top: 55px;
+}
+
+.mostruario {
+    max-width: 400px;
+    margin: auto;
+}
+
+.planta-area-lazer{
+    height: 550px;
+    padding: 25px;
+    color:#fff;
+    background-color: rgb(34, 147, 147);
+    border: 5px solid #fff;
+}
+
+.planta-area-lazer img{
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.torre-orla,
+.torre-jardim-1,
+.torre-jardim-2{
+    height: 550px;
+    padding: 40px;
+    color:rgb(34, 147, 147);
+    background-color: #fff;
+    border: 5px solid rgb(34, 147, 147);
+}
+
+.torre-orla h2,
+.torre-jardim-1 h2,
+.torre-jardim-2 h2{
+    font-size: 50px;
+    padding-top: 40px;
+
+}
+
+.descritivo-torre-orla,
+.descritivo-torre-jardim-1,
+.descritivo-torre-jardim-2{
+    display: flex;
+    align-items: center;
+}
+
+.video-torre-orla img,
+.video-torre-jardim-1 img,
+.video-torre-jardim-2 img{
+    width: 75%;
+    padding-left: 120px;
+
+}
+
+.p-torre-orla{
+    width: 400px;
+}
+
+.planta-torre-orla,
+.planta-torre-jardim-1,
+.planta-torre-jardim-2{
+    height: 550px;
+    padding: 40px;
+    color:rgb(34, 147, 147);
+    background-color: #fff;
+    border: 5px solid rgb(34, 147, 147);
+}
+
+.planta-torre-orla img,
+.planta-torre-jardim-1 img,
+.planta-torre-jardim-2 img{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.localizacao{
+    height: 550px;
+    padding: 25px;
+    color:#fff;
+    background-color: rgb(34, 147, 147);
+    border: 5px solid #fff;
+}
+
+.localizacao-container{
+    display: flex;
+    align-items: center;
+}
+
+.localizacao h2{
+    font-size: 50px;
+    padding-top: 40px;
+
+
+}
+
+.descricao-localizacao iframe{
+    height: 300px;
+    width: 300px;
+}
+
+.descritivo p,
+.p-torre-orla p,
+.p-torre-jardim-1 p,
+.p-torre-jardim-2 p{
+    font-size: 12px;
+    display: inline;
+}
+
+.descritivo-apartamentos,
+.descritivo-lazer,
+.p-torre-orla,
+.p-torre-jardim-1,
+.p-torre-jardim-2{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.p-torre-orla ul li,
+.p-torre-jardim-1 ul li,
+.p-torre-jardim-2 ul li{
+    width: 150px;
+    height: auto;
+    font-size: 15px;
+}
+
+.coluna-1{
+    padding-left: 15px;
+}
+
+.contato{
+    height: 550px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    color:rgb(34, 147, 147);
+    background-color: #fff;
+    border: 5px solid #fff;
+}
+
+.conteudo{
+    width: 400px;
+}
+
+.whatsapp{
+    display: flex;
+    flex-direction: column;
+    padding-left: 300px;
+}
+
+.whatsapp img{
+    width: 100px;
+}
+
+.whatsapp a{
+    padding-left: 65px;
+    
+}
+
+.contato h2{
+    font-size: 50px;
+    padding-top: 40px;
+
+}
+
+
+@media screen and (max-width:641px){
+    .container{
+        max-width: 90%;
+    }
+
+    header{
+        max-width: 400px;
+    }
+
+    nav{
+        margin-left: 0px;
+    }
+
+    nav .container{
+        display: inline;
+        margin: 0px;
+        padding: 0px;
+  
+    }
+
+    nav li a{
+        font-size: 12px;
+    }
+
+
+    .localizacao-container,
+    .descritivo-apartamentos,
+    .descritivo-lazer,
+    .p-torre-orla,
+    .p-torre-jardim-1,
+    .p-torre-jardim-2,
+    .descritivo-torre-orla,
+    .descritivo-torre-jardim-1,
+    .descritivo-torre-jardim-2,
+    .predio,
+    .area-lazer,
+    .contato{
+        display:block;
+
+    }
+
+    .foto-capa img{
+        max-width: 100%;
+    }
+
+    .predio{
+        height: 1000px;
+        padding-top: 60px;
+    }
+
+    .area-lazer{
+        height: 800px;
+    }
+
+    .planta-area-lazer,
+    .planta-torre-orla,
+    .planta-torre-jardim-1,
+    .planta-torre-jardim-2{
+        height: 250px;
+    }
+
+    .torre-orla{
+        height: 1000px;
+        padding-top: 60px;
+    }
+
+    .torre-jardim-1,
+    .localizacao{
+        height: 900px;
+        padding-top: 60px;
+    }
+
+    .torre-jardim-2{
+        height: 850px;
+        padding-top: 60px;
+    }
+
+    .contato{
+        height: 1100px;
+        padding-top: 60px;
+    }
+
+    #carousel-imagens2{
+        display: block;
+    }
+
+    .video-torre-orla img,
+    .video-torre-jardim-1 img,
+    .video-torre-jardim-2 img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .predio h2,
+    .torre-orla h2,
+    .torre-jardim-1 h2,
+    .torre-jardim-2 h2,
+    .contato h2,
+    .localizacao h2,
+    .predio h2{
+        font-size: 30px;
+        
+    }
+
+
+    .descritivo-lazer ul,
+    .descritivo-torre-orla ul,
+    .descritivo-torre-jardim-1 ul,
+    .descritivo-torre-jardim-2,
+    .descritivo-apartamentos{
+        padding-left: 0px;
+        font-size: 15px;
+    }
+
+    .torre-orla h3,
+    .torre-jardim-1 h3,
+    .torre-jardim-2 h3{
+    font-size: 1rem;
+    
+    }
+
+    .coluna-1{
+        padding-left: 0;
+    }
+
+    .planta-area-lazer img {
+        width: 100%;
+    }
+
+    .contato form{
+        height: 400px;
+        width: 300px;
+    }
+
+    .contato .whatsapp{
+        padding-left: 50px;
+    }
+} 
+
+
+
